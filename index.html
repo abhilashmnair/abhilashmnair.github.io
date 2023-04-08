@@ -1,179 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&family=Poiret+One&display=swap" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body class="bg-black">
-    <div class="w-screen h-screen flex flex-col font-medium text-gray-400 font-['Montserrat']">
-        <div class='fixed z-[99] top-0 left-0 right-0 flex justify-between lg:p-10 p-6 uppercase'>
-            <div class="w-full md:text-lg text-xs flex justify-start">
-                <a href="#">home</a>
-            </div>
-            <div class="w-full md:text-lg text-xs flex justify-end">
-                <a href="#info">info</a>
-            </div>
-        </div>
-        <div id="fullpage">
-            <div id="info" class="section active text-white">
-                <div class="flex md:mx-44 mx-10 justify-between items-center h-screen">
-                    <div>
-                        <div class="xl:leading-normal md:text-5xl xl:text-6xl text-3xl font-thin">
-                            Hi, 👋 Abhi here! An engineer,<br>
-                            developer, melomaniac, producer <br> 
-                            and a dude from <a class='underline decoration-1 underline-offset-8' href="https://en.wikipedia.org/wiki/Kerala"><i>Kerala</i></a>
-                        </div>
-                        <br>
-                        <div class="text-lg tracking-wide">
-                            Check my <a href="https://linkedin.com/in/abhilashmnair"><i class="underline decoration-1 underline-offset-[4px]">LinkedIn</i></a>
-                        </div>
-                    </div>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Abhilash M Nair | Developer & Programmer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link href="./images/favicon.png" rel="icon">
+  		<link href="./images/favicon.png" rel="apple-touch-icon">
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<header id="header">
+				<div class="content">
+					<div class="inner">
+						<h1>Abhilash M Nair</h1>
+						<p>Developer | Ailurophile | Melomaniac <br></p>
+						<a href="https://open.spotify.com/user/31nlsdxvptta5sp2l7gfngqbwmla">
+						<img src="https://spotify-now-playing-4aje9hpbn.vercel.app/api/spotify-playing" width = "90%" alt="Spotify Now Playing"></a>
+					</div>
+				</div>
+			</header>
 
-                </div>
-                <div class="absolute z-[-1] w-[650px] h-[650px] bottom-10 lg:right-5 bg-gradient-to-b md:from-transparent md:to-black/90 from-black/50 to-black/90"></div>
-                <div class="absolute z-[-2] w-[650px] bottom-10 lg:right-5">
-                    <img src="./assets/DP-max.jpg" alt="">
-                </div>
-            </div>
-            <!--
-            <div id='skills' class="section text-white">
-                <div class="flex mx-44 justify-between items-center h-screen">
-                    <div class="w-full">
-                        <div class="text-5xl font-normal leading-normal mb-10">
-                           A few tecnologies I expertise in
-                        </div>
-                        <div class="grid grid-cols-5 gap-8 mx-20 text-sm">
-                            <div class="flex flex-col justify-center items-center transition duration-300 ease-in-out hover:duration-300 hover:scale-125">
-                                <img src="https://img.icons8.com/color/512/react-native.png" class="w-36" alt="react">
-                                <div class="m-5">
-                                    React | React Native
-                                </div>
-                            </div>
-                            <div class="flex flex-col justify-center items-center transition duration-300 ease-in-out hover:duration-300 hover:scale-125">
-                                <img src="https://img.icons8.com/color/512/html-5.png" class="w-36" alt="html">
-                                <div class="m-5">
-                                    HTML & CSS
-                                </div>
-                            </div>
-                            <div class="flex flex-col justify-center items-center transition duration-300 ease-in-out hover:duration-300 hover:scale-125">
-                                <img src="https://img.icons8.com/color/512/javascript.png" class="w-36" alt="javascript">
-                                <div class="m-5">
-                                    JavaScript
-                                </div>
-                            </div>
-                            <div class="flex flex-col justify-center items-center transition duration-300 ease-in-out hover:duration-300 hover:scale-125 p-5">
-                                <img src="https://img.icons8.com/color/512/python.png" class="w-36" alt="python">
-                                <div class="m-5">
-                                    Python
-                                </div>
-                            </div>
-                            <div class="flex flex-col justify-center items-center transition duration-300 ease-in-out hover:duration-300 hover:scale-125 p-5">
-                                <img src="https://img.icons8.com/color/512/firebase.png" class="w-36" alt="firebase">
-                                <div class="m-5">
-                                    Google Firebase
-                                </div>
-                            </div>
-                            <div class="flex flex-col justify-center items-center transition duration-300 ease-in-out hover:duration-300 hover:scale-125">
-                                <img src="https://img.icons8.com/fluency/512/docker.png" class="w-36" alt="docker">
-                                <div class="m-5">
-                                    Docker
-                                </div>
-                            </div>
-                            <div class="flex flex-col justify-center items-center transition duration-300 ease-in-out hover:duration-300 hover:scale-125">
-                                <img src="https://img.icons8.com/color/512/kubernetes.png" class="w-36" alt="kubernetes">
-                                <div class="m-5">
-                                    Kubernetes
-                                </div>
-                            </div>
-                            <div class="flex flex-col justify-center items-center transition duration-300 ease-in-out hover:duration-300 hover:scale-125">
-                                <img src="https://img.icons8.com/color/512/openshift.png" class="w-36" alt="openshift">
-                                <div class="m-5">
-                                    Red Hat Openshift
-                                </div>
-                            </div>
-                            <div class="flex flex-col justify-center items-center transition duration-300 ease-in-out hover:duration-300 hover:scale-125 p-5">
-                                <img src="https://img.icons8.com/color/512/c-plus-plus-logo.png" class="w-36" alt="c/c++">
-                                <div class="m-5">
-                                    C | C++
-                                </div>
-                            </div>
-                            <div class="flex flex-col justify-center items-center transition duration-300 ease-in-out hover:duration-300 hover:scale-125 p-5">
-                                <img src="https://img.icons8.com/color/ffffff/512/jenkins.png" class="w-36" alt="jenkins">
-                                <div class="m-5">
-                                    Jenkins
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <div id="connect" class="section text-white">
-                <div class="flex md:mx-36 mx-5 justify-start items-center h-screen">
-                    <div class="flex flex-col">
-                        <div class="lg:text-6xl text-3xl font-bold">
-                            Get in touch
-                        </div>
-                        <div class="flex lg:text-xl text-md">
-                            <div class="my-5">
-                                <div class="text-gray-300">
-                                    Email?!
-                                </div>
-                                <div class="">
-                                    <a href="mailto:abhilashmnair20@gmail.com">abhilashmnair20@gmail.com</a>
-                                </div>
-                            </div>
-                            <div class="m-5 mx-10">
-                                <div class="text-gray-300">
-                                    Text?!
-                                </div>
-                                <div class="flex flex-col">
-                                    <a href="https://t.me/abhilashmnair" target="_blank" class="underline decoration-1 underline-offset-[4px]">Telegram</a>
-                                    <a href="https://instagram.com/abhilashmnair" target="_blank" class="underline decoration-1 underline-offset-[4px]">Instagram</a>
-                                    <a href="https://twitter.com/abhilashmnair20" target="_blank" class="underline decoration-1 underline-offset-[4px]">Twitter</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="lg:text-xl text-sm text-gray-300">
-                                ..or would you like to be the commit to my repo!? 😉
-                            </div>
-                            <div class="text-xl">
-                                <a href="https://github.com/abhilashmnair" target="_blank" class="underline decoration-1 underline-offset-[4px]">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="absolute z-[-1] w-[600px] h-[600px] bottom-10 lg:right-5 bg-gradient-to-b from-transparent to-black"></div>
-                <div class="absolute z-[-2] w-[600px] bottom-10 lg:right-5">
-                    <img class="w-full" src="./assets/cat-phone-cat.gif" alt=""/>
-                </div>
-            </div>
-        </div>
-        <div class='fixed z-[99] bottom-0 left-0 right-0 flex justify-between p-10 uppercase'>
-            <div class="w-full md:text-lg text-xs flex justify-start">
-                © <script>document.write(new Date().getFullYear())</script> ABHILASH NAIR
-            </div>
-            <div class="w-full md:text-lg text-xs flex justify-end">
-                <a href="#connect">connect</a>
-            </div>
-        </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
-    <script>
-        new fullpage('#fullpage', {
-            autoScrolling: true,
-            navigation: true,
-            anchors: ['info', 'connect'],
-            scrollingSpeed: 1000
-        })
-    </script>
-</body>
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://github.com/abhilashmnair/" target="blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://linkedin.com/in/abhilashmnair/" target="blank" class="icon brands fa-linkedin"><span class="label">Mail</span></a></li>
+					<li><a href="https://twitter.com/abhilashmnair20/" target="blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://soundcloud.com/maniacmusicxoxo/" target="blank" class="icon brands fa-soundcloud"><span class="label">Soundcloud</span></a></li>
+					<li><a href="https://t.me/abhilashmnair" target="blank" class="icon brands fa-telegram"><span class="label">Telegram</span></a></li>
+					<li><a href="https://instagram.com/abhilashmnair/" target="blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+				<p class="copyright">Made with 💜 by Abhilash</p>
+			</footer>
+
+		</div>
+
+		<div id="bg"></div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
