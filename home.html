@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&family=Poiret+One&display=swap" rel="stylesheet">
+    <title>Home | ABHILASH NAIR</title>
+</head>
+
+<body class="bg-black opacity-0 transition-opacity duration-[1500ms]" onload="document.body.style.opacity='1'">
+    <div class="absolute z-[-1]">
+        <video class="h-screen w-screen object-cover" autoplay muted loop>
+            <source class="object-cover" src="assets/bg-video.mp4" type="video/mp4" />
+        </video>
+    </div>
+    <div class="absolute z-[-1] h-screen w-screen bg-gradient-to-b from-black/20 to-black"></div>
+    <div class="w-screen h-screen flex flex-col font-medium text-white font-['Montserrat']">
+        <div class='fixed z-[99] top-0 left-0 right-0 flex justify-between lg:p-10 p-6 uppercase'>
+            <div class="w-full md:text-lg text-xs flex justify-end">
+                <a href="./about.html#info">info</a>
+            </div>
+        </div>
+        <div id="fullpage">
+            <div data-anchor="info" class="section text-white">
+                <div class="flex flex-col md:mx-44 mx-10 justify-center items-center h-screen">
+                    <div class="hero-container">
+                        <div class="environment"></div>
+                        <h2 class="hero glitch layers" data-text="بحيلش"><span>بحيلش</span></h2>
+                    </div>
+                    <div class="mt-10 tracking-widest lg:text-lg text-[10px]">
+                        PROGRAMMER | MELOMANIAC | AULIROPHILE
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='fixed z-[99] bottom-0 left-0 right-0 flex justify-between p-10 uppercase'>
+            <div class="w-full md:text-lg text-xs flex justify-center">
+                &COPY; <script>document.write(new Date().getFullYear())</script> ABHILASH NAIR
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+            license: 'gplv3-license',
+            autoScrolling: true,
+            navigation: false,
+            anchors: ['info', 'connect'],
+            scrollingSpeed: 700
+        })
+    </script>
+</body>
+</html>
