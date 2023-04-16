@@ -8,41 +8,96 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&family=Poiret+One&display=swap" rel="stylesheet">
-    <title>Home | ABHILASH NAIR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&family=Poiret+One&display=swap" rel="stylesheet" crossorigin>
+    <title>ABHILASH NAIR</title>
 </head>
 
 <body class="bg-black opacity-0 transition-opacity duration-[1500ms]" onload="document.body.style.opacity='1'">
-    <div class="absolute z-[-1]">
-        <video class="h-screen w-screen object-cover" autoplay muted loop>
-            <source class="object-cover" src="assets/bg-video.mp4" type="video/mp4" />
-        </video>
-    </div>
-    <div class="absolute z-[-1] h-screen w-screen bg-gradient-to-b from-black/20 to-black"></div>
     <div class="w-screen h-screen flex flex-col font-medium text-white font-['Montserrat']">
         <div class='fixed z-[99] top-0 left-0 right-0 flex justify-between lg:p-10 p-6 uppercase'>
+            <div class="w-full md:text-lg text-xs flex justify-start">
+                <a href="#home">home</a>
+            </div>
             <div class="w-full md:text-lg text-xs flex justify-end">
-                <a href="./about#info">info</a>
+                <a href="#connect">connect</a>
             </div>
         </div>
         <div id="fullpage">
-            <div data-anchor="info" class="section text-white">
-                <div class="flex flex-col md:mx-44 mx-10 justify-center items-center h-screen">
-                    <div class="hero-container">
-                        <div class="environment"></div>
-                        <h2 class="hero glitch layers tracking-tighter" data-text="بحيلش"><span>بحيلش</span></h2>
+            <div data-anchor="home" class="section text-white">
+                <div class="flex md:mx-44 mx-10 justify-between items-center h-screen lg:w-[50%]">
+                    <div>
+                        <div class="xl:leading-normal md:text-5xl xl:text-6xl text-3xl font-thin">
+                            Hi, 👋 Abhi here! An engineer,
+                            developer, producer
+                            and a dude from <a class='underline decoration-1 underline-offset-8' href="https://en.wikipedia.org/wiki/Kerala" target="_blank"><i>Kerala</i></a>
+                        </div>
+                        <br>
+                        <div class="text-lg tracking-wide">
+                            Check my <a href="https://linkedin.com/in/abhilashmnair" target="_blank"><i class="underline decoration-1 underline-offset-[4px]">LinkedIn</i></a>
+                        </div>
                     </div>
-                    <div class="mt-10 tracking-widest lg:text-lg text-[10px]">
-                        PROGRAMMER | MELOMANIAC | AULIROPHILE
+
+                </div>
+                <div class="absolute z-[-1] w-[650px] h-[650px] bottom-10 lg:right-5 bg-gradient-to-b md:from-transparent md:to-black from-black/50 to-black"></div>
+                <div class="absolute z-[-2] w-[650px] bottom-10 lg:right-5">
+                    <img src="./assets/images/DP-min.jpg" alt="">
+                </div>
+            </div>
+            <div data-anchor="connect" class="section text-white">
+                <div class="flex md:mx-36 mx-3 lg:text-xl text-sm justify-start items-center h-screen">
+                    <div class="flex flex-col">
+                        <div class="lg:text-6xl text-3xl font-bold">
+                            Get in touch
+                        </div>
+                        <div class="flex lg:text-xl text-md">
+                            <div class="my-5">
+                                <div class="text-gray-300">
+                                    Email?!
+                                </div>
+                                <div class="underline decoration-1 underline-offset-[4px]">
+                                    <a href="mailto:abhilashmnair20@gmail.com">abhilashmnair20@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="m-5 lg:mx-10">
+                                <div class="text-gray-300">
+                                    ..maybe text?!
+                                </div>
+                                <div class="flex flex-col">
+                                    <a href="https://t.me/abhilashmnair" target="_blank" class="underline decoration-1 underline-offset-[4px]">Telegram</a>
+                                    <a href="https://instagram.com/abhilashmnair" target="_blank" class="underline decoration-1 underline-offset-[4px]">Instagram</a>
+                                    <a href="https://twitter.com/abhilashmnair20" target="_blank" class="underline decoration-1 underline-offset-[4px]">Twitter</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-5">
+                            <div class="lg:text-xl text-sm text-gray-300">
+                                ..or would you like to be the commit to my repo!? 😉
+                            </div>
+                            <div class="">
+                                <a href="https://github.com/abhilashmnair" target="_blank" class="underline decoration-1 underline-offset-[4px]">GitHub</a>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="absolute z-[-1] w-[600px] h-[800px] bottom-10 lg:right-5 bg-gradient-to-b from-transparent to-black"></div>
+                <div class="absolute z-[-2] w-[600px] bottom-10 lg:right-5">
+                    <img class="w-full" src="./assets/images/calling-cat.gif" alt=""/>
                 </div>
             </div>
         </div>
-        <div class='fixed z-[99] bottom-0 left-0 right-0 flex justify-between p-10 uppercase'>
-            <div class="w-full md:text-lg text-xs flex justify-center">
+        <div class='fixed z-[99] bottom-0 left-0 right-0 flex justify-between lg:p-10 p-6 uppercase'>
+            <div class="w-full md:text-lg text-xs flex justify-start items-center text-gray-400">
                 &COPY; <script>document.write(new Date().getFullYear())</script> ABHILASH NAIR
+            </div>
+            <div class="lg:flex hidden w-full md:text-lg text-xs justify-center">
+                <img class="h-[40px] w-[50px]" src="https://img.icons8.com/ios/60/ffffff/expand-arrow--v2.png" alt="">
+            </div>
+            <div class="w-full md:text-lg text-xs flex justify-end">
+                <div>
+                    <a href="https://soundcloud.com/maniacmusicxoxo" target="_blank">
+                        <img src="https://img.icons8.com/windows/ffffff/512/soundcloud.png" class="lg:w-10 w-7" alt="soundcloud">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -52,7 +107,7 @@
             license: 'gplv3-license',
             autoScrolling: true,
             navigation: false,
-            anchors: ['info', 'connect'],
+            anchors: ['home', 'connect'],
             scrollingSpeed: 700
         })
     </script>
